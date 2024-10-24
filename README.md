@@ -44,8 +44,8 @@ After the build process is completed, you will find the output in the `dist/` fo
 To run the application, give the *AppImage* executable permissions and then execute it:
 
 ```bash
-chmod +x dist/whatsapp-app-1.0.0.AppImage
-./dist/whatsapp-app-1.0.0.AppImage
+chmod +x Whatsapp_app_linux/whatsapp-app-1.0.0.AppImage
+./Whatsapp_app_linux/whatsapp-app-1.0.0.AppImage
 ```
 
 You can also run the app by double-clicking the *AppImage* file.
