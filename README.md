@@ -1,23 +1,67 @@
-# WhatsApp Desktop for Linux
 
-A simple Electron-based desktop application for running [web.whatsapp.com](https://web.whatsapp.com) on Linux.
+# WhatsApp App for Linux
+
+A simple Electron-based application to run WhatsApp Web on Linux as a desktop application.
 
 ## Features
-- Runs WhatsApp Web as a desktop application.
-- Mimics the latest version of Google Chrome to ensure compatibility with WhatsApp Web.
+- Runs WhatsApp Web in a standalone app
+- Built using Electron
+- Available in *AppImage* format for Linux
 
-## Installation and Usage
+## Requirements
+Before you can build and run the application, make sure you have the following installed:
+- **Node.js** and **npm**
 
-### Prerequisites
-- Make sure you have a 64-bit Linux operating system.
+## Installation and Setup
 
-### How to Run
+### Step 1: Clone the Repository
+First, clone this repository to your local machine:
 
-1. Download the latest release of the application (you can find it in the `Releases` section).
-2. Extract the downloaded archive.
-3. Open a terminal and navigate to the extracted folder:
-   ```bash
-   cd whatsapp-app-linux-x64
-4. Run the application by executing:
 ```bash
-./whatsapp-app
+git clone https://github.com/bimacloud/Whatsapp_app_linux.git
+cd Whatsapp_app_linux
+```
+
+### Step 2: Install Dependencies
+Install the necessary dependencies using npm:
+
+```bash
+npm install
+```
+
+This will download and install all the required Node.js modules for the project.
+
+### Step 3: Build the Application
+To build the application into an *AppImage* format, run the following command:
+
+```bash
+npm run build
+```
+
+After the build process is completed, you will find the output in the `dist/` folder.
+
+### Step 4: Run the Application
+To run the application, give the *AppImage* executable permissions and then execute it:
+
+```bash
+chmod +x dist/whatsapp-app-1.0.0.AppImage
+./dist/whatsapp-app-1.0.0.AppImage
+```
+
+You can also run the app by double-clicking the *AppImage* file.
+
+## Running in Development Mode
+
+If you want to run the app without building, you can run it directly in development mode using:
+
+```bash
+npm start
+```
+
+This will open the app in a development window using Electron.
+
+## Contributing
+Feel free to submit issues or pull requests. Contributions are always welcome!
+
+## License
+This project is licensed under the ISC License.
